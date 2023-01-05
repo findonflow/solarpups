@@ -7,6 +7,7 @@ pub fun main(user: Address, id: UInt64) : AnyStruct? {
 	let account = getAccount(user)
 	let collection= account.getCapability(pp).borrow<&{MetadataViews.ResolverCollection}>()!.borrowViewResolver(id: id)
 
+
 	return MetadataViews.getEditions(collection)
 }
 

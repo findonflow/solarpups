@@ -14,4 +14,6 @@ func main() {
 	)
 
 	o.Script("getEditions", overflow.WithArg("user", "account"), overflow.WithArg("id", 0))
+
+	o.Script("getNFT", overflow.WithArg("user", "account"), overflow.WithArg("id", 0))
 }
