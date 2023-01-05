@@ -13,4 +13,5 @@ func main() {
 		overflow.WithArg("recipient", "account"),
 	)
 
+	o.Script("getEditions", overflow.WithArg("user", "account"), overflow.WithArg("id", 0))
 }
